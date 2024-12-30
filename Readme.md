@@ -1,4 +1,12 @@
-# jugh3ad.github.io/StarCalc/
+# cubruce1103.github.io/StarCalc/
+
+Forked from [jugh3ad](https://github.com/jugh3ad/StarCalc)
+
+This fork further added some field to reflect new boosts in game since the last commit (2023 Nov) of the original
+
+TODO: in 11.6, the price formula for magnet changed, but this fork doesn't reflect that for now.
+
+<!--> TODO provide a form to fix formula change issue </!-->
 
 A companion app/website for the merging game Scrap Clicker 2.
 
