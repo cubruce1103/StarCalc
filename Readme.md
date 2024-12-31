@@ -22,4 +22,4 @@ One calculated, it will provide the needed amounts of:
 * Magnets
 * Star Fragments
 
-To see it in action: https://jugh3ad.github.io/StarCalc/
+To see it in action: https://cubruce1103.github.io/StarCalc/
