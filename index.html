@@ -1,6 +1,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>StarCalc</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="css/site.css" media="screen,projection"/>
@@ -11,11 +12,21 @@
 <div class="text-center">
     <span id="lblNotation">Number Notation:</span>
     <select id="inputNotation" onchange="calculate()">
-        <option value="Original">Original</option>
-        <option value="Normal">Normal</option>
-        <option value="Abstract">Abstract</option>
-        <option value="Scientific">Scientific</option>
+        <option value="Original" id="lblOriginal" >Original</option>
+        <option value="Normal" id="lblNormal" >Normal</option>
+        <option value="Abstract" id="lblAbstract">Abstract</option>
+        <option value="Scientific" id="lblScientific" >Scientific</option>
     </select>
+</div>
+<div style="position: absolute; top: 10px; right: 10px; z-index: 1000;">
+  <select id="languageSelect" onchange="changeLanguage()" class="form-select form-select-sm">
+    <option value="en">EN</option>
+    <option value="ru">RU</option>
+    <option value="es">ES</option>
+    <option value="de">DE</option>
+    <option value="fr">FR</option>
+    <option value="fr">PL</option>
+  </select>
 </div>
 <div class="text-center" ><span id = "lblSetAll" >Set all Stars: </span><input id="setAll" type="number" maxlength="5" placeholder="Enter level" onchange="setAll();calculate()" min="10" value="10" ></div>
 <div class="text-center" ><span id = "lblSettings">Remember My Settings: </span><input id="rememberMe" type="checkbox" onchange="onRememberMeChange()"></div>
@@ -95,7 +106,7 @@
             <span class="h3 w-50" id="lblv2Level">Scrapyard V2:</span>
             <input class="w-25" id="v2" type="number" placeholder="Enter level" min="1" value="1" onchange="calculate()">
         </label>
-		<br/>
+        <br/>
         <label class="text-center">
             <span class="h3 w-50" id="lblAchievement25">Achievement Boost 2 Level:</span>
             <input class="w-25" id="achievement" type="number" placeholder="Enter Amount" min="0" value="0" onchange="calculate()">
@@ -104,7 +115,7 @@
             <span class="h3 w-50" id="lblMasteryBoost17">Mastery 17+ Barrels:</span>
             <input class="w-25" id="masteryBoost17" type="number" placeholder="Enter Amount" min="0" value="0" onchange="calculate()">
         </label>
-		<br/>
+        <br/>
         <label class="text-center">
             <span class="h3 w-50" id = "lblTarget">Target Star Level:</span>
             <input class="w-25" id="target" type="number" placeholder="Enter level" min="11" value="11" onchange="calculate()">
@@ -115,7 +126,7 @@
         <!--<div class="text-center" style="padding: 10px;">
             <button class="btn btn-primary" onclick="calculate()" >Submit</button>
         </div> 
-		-->
+        -->
     </div>
 
     <div class="container">
@@ -141,13 +152,20 @@
         </div>
     </div>
 </div>
-<div style="color:white; text-align:center;">Designed with 🤍 by ScrapObsession's very own Dom</div>
-<div style="color:white; text-align:center;">Meticulous coded and tested by Jugh3ad</div>
-<div style="color:white; text-align:center;">Quick fork by cubruce</div>
-<div style="color:white; text-align:center;">Images courtesy of <a href="https://official-scrap-2.fandom.com/">Official Scrap 2 Wiki | Fandom</a></div>
-<div style="color:white; text-align:center;">Issues/Suggestions? <a href="https://github.com/cubruce1103/StarCalc/tree/personal">Submit a Pull Request or Issue</a></div>
+
+<div style="color:white; text-align:center;" id="lblCredits1"></div>
+<div style="color:white; text-align:center;" id="lblCredits2"></div>
+<div style="color:white; text-align:center;" id="lblCredits3"></div>
+<div style="color:white; text-align:center;"> <span id="lblCredits4"></span> 
+  <a href="https://official-scrap-2.fandom.com/" id="linkWiki" target="_blank"></a>
+</div>
+<div style="color:white; text-align:center;"> <span id="lblCredits5"></span> 
+  <a href="https://github.com/cubruce1103/StarCalc/tree/personal" id="linkGitHub" target="_blank"></a>
+</div>
 
 <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="js/lang.js"></script>
+<script src="js/costs.js"></script>
 <script type="text/javascript" src="js/site.js"></script>
 </body>
 </html>
