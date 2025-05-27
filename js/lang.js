@@ -16,10 +16,10 @@ var languages = { //TODO translate Achievement25, MasteryBoost17, Magic label
     "LinkWiki": "Official Scrap 2 Wiki | Fandom",
     "LinkGitHub": "Submit a Pull Request or Issue",
     "lblNotation": "Number Notation:",
-    "lbOriginal": "Original",
-    "lbNormal": "Normal",
-    "lbAbstract": "Abstract",
-    "lbScientific": "Scientific"
+    "lblOriginal": "Original",
+    "lblNormal": "Normal",
+    "lblAbstract": "Abstract",
+    "lblScientific": "Scientific"
   },
   "es": {
     "Title": "Calculadora de Estrellas",
@@ -38,10 +38,10 @@ var languages = { //TODO translate Achievement25, MasteryBoost17, Magic label
     "LinkWiki": "Wiki oficial de Scrap 2 | Fandom",
     "LinkGitHub": "Enviar un Pull Request o Issue",
     "lblNotation": "Number Notation:",
-    "lbOriginal": "Original",
-    "lbNormal": "Normal",
-    "lbAbstract": "Abstract",
-    "lbScientific": "Scientific"
+    "lblOriginal": "Original",
+    "lblNormal": "Normal",
+    "lblAbstract": "Abstract",
+    "lblScientific": "Scientific"
   },
   "ru": {
     "Title": "Калькулятор звёзд",
@@ -60,10 +60,10 @@ var languages = { //TODO translate Achievement25, MasteryBoost17, Magic label
     "LinkWiki": "Официальная вики Scrap 2",
     "LinkGitHub": "Отправить Pull Request или Issue",
     "lblNotation": "Вид отображения чисел:",
-    "lbOriginal": "Оригинальные",
-    "lbNormal": "Нормальные",
-    "lbAbstract": "Абстрактные",
-    "lbScientific": "Научные"
+    "lblOriginal": "Оригинальные",
+    "lblNormal": "Нормальные",
+    "lblAbstract": "Абстрактные",
+    "lblScientific": "Научные"
   },
   "de": {
     "Title": "Sterne Kalkulator",
@@ -82,10 +82,10 @@ var languages = { //TODO translate Achievement25, MasteryBoost17, Magic label
     "LinkWiki": "Official Scrap 2 Wiki | Fandom",
     "LinkGitHub": "Submit a Pull Request or Issue",
     "lblNotation": "Number Notation:",
-    "lbOriginal": "Original",
-    "lbNormal": "Normal",
-    "lbAbstract": "Abstract",
-    "lbScientific": "Scientific"
+    "lblOriginal": "Original",
+    "lblNormal": "Normal",
+    "lblAbstract": "Abstract",
+    "lblScientific": "Scientific"
   },
   "fr": {
     "Title": "Étoile Calculette",
@@ -104,10 +104,10 @@ var languages = { //TODO translate Achievement25, MasteryBoost17, Magic label
     "LinkWiki": "Official Scrap 2 Wiki | Fandom",
     "LinkGitHub": "Submit a Pull Request or Issue",
     "lblNotation": "Number Notation:",
-    "lbOriginal": "Original",
-    "lbNormal": "Normal",
-    "lbAbstract": "Abstract",
-    "lbScientific": "Scientific"
+    "lblOriginal": "Original",
+    "lblNormal": "Normal",
+    "lblAbstract": "Abstract",
+    "lblScientific": "Scientific"
   },
   "pl": {
   "Title": "Kalkulator Gwiazd",
@@ -126,10 +126,10 @@ var languages = { //TODO translate Achievement25, MasteryBoost17, Magic label
   "LinkWiki": "Oficjalna Wiki Scrap 2 | Fandom",
   "LinkGitHub": "Prześlij Pull Request lub Zgłoszenie",
   "lblNotation": "Notacja Liczbowa:",
-  "lbOriginal": "Original",
-  "lbNormal": "Normal",
-  "lbAbstract": "Abstract",
-  "lbScientific": "Scientific"
+  "lblOriginal": "Original",
+  "lblNormal": "Normal",
+  "lblAbstract": "Abstract",
+  "lblScientific": "Scientific"
   }
 
 }
@@ -159,10 +159,10 @@ function applyLanguage() {
   document.getElementById("linkWiki").innerHTML = languages[language]["LinkWiki"];
   document.getElementById("linkGitHub").innerHTML = languages[language]["LinkGitHub"];
   document.getElementById("lblNotation").innerHTML = languages[language]["lblNotation"];
-  document.getElementById("lbOriginal").innerHTML = languages[language]["lbOriginal"];
-  document.getElementById("lbNormal").innerHTML = languages[language]["lbNormal"];
-  document.getElementById("lbAbstract").innerHTML = languages[language]["lbAbstract"];
-  document.getElementById("lbScientific").innerHTML = languages[language]["lbScientific"];
+  document.getElementById("lblOriginal").innerHTML = languages[language]["lblOriginal"];
+  document.getElementById("lblNormal").innerHTML = languages[language]["lblNormal"];
+  document.getElementById("lblAbstract").innerHTML = languages[language]["lblAbstract"];
+  document.getElementById("lblScientific").innerHTML = languages[language]["lblScientific"];
 
 
   // Обновляем значение в селекте, если есть
