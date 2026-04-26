@@ -126,10 +126,10 @@ var languages = { //TODO translate Achievement25, MasteryBoost17, Magic label
   "LinkWiki": "Oficjalna Wiki Scrap 2 | Fandom",
   "LinkGitHub": "Prześlij Pull Request lub Zgłoszenie",
   "lblNotation": "Notacja Liczbowa:",
-  "lblOriginal": "Original",
-  "lblNormal": "Normal",
-  "lblAbstract": "Abstract",
-  "lblScientific": "Scientific"
+  "lblOriginal": "Oryginalna",
+  "lblNormal": "Normalna",
+  "lblAbstract": "Abstrakcja",
+  "lblScientific": "Do potęgi"
   }
 
 }
